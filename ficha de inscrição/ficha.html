@@ -1,19 +1,39 @@
 <html>
-
 <head>
-<title> Ficha de Inscrição </title>
-
+       <title>Ficha de Inscrição</title>
 </head>
-<body>
-<h1> <center> Ficha de inscrição </h1>
-
-
-</body>
-
-
-
-
-
-
-
+          <body><form action="gravar_dados">
+                <h1><center>Ficha de inscrição</center></h1>
+<p>
+<table border="1">
+<tr>
+        <th colspan="3">Nome do candidato:<input type="text" name="nome_candidato"></th>
+</tr>
+<tr>
+        <th>Endereço:<input type="text" name="endereco"></th>
+           <th>CEP:<input type="number" name="cep"></th>
+             <th>uf:<input type="text" name="uf" size="2"></th>
+</tr>
+<tr>
+           <th>Telefone 1:<input type="number" name="numero"></th>
+             <th>Telefone 2:<input type="number" name="numero2"></th>
+                <th>Telefone 3:<input type="number" name="numero3"></th>
+</tr>
+<tr>
+          <th>RG:<input type="number" name="rg"></th>
+        <th>cpf:<input type="number" name="cpf"></th>
+          <th>sexo:
+             <input type="radio" name="sexo" value="m" checked>M
+              <input type="radio" name="sexo" value="f">F</th>
+</tr>
+<tr>
+              <th colspan="2">Escolaridade:
+            <select name="escolaridade">
+            <option value="medio">Ensino Médio</option>
+             <option value="superior">Ensino Superior</option>
+</select></th>
+              <th><input type="submit" value="Enviar"></th>
+</tr>
+</table>
+</form></body>
 </html>
